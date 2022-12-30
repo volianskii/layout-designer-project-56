@@ -21,14 +21,13 @@
     row-gap: 24px;
 
     & input {
-        /* min-width: 270px; */
         min-height: 50px;
         min-width: 270px;
         text-indent: 20px;
-        /* margin-bottom: 1.5rem; */
         border: 2px solid #cacaca;
         border-radius: 3px;
         background: none;
+        box-sizing: border-box;
     }
 
     & button {

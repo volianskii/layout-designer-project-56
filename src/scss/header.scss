@@ -48,10 +48,11 @@
     grid-template-columns: repeat(4, auto);
     column-gap: 24px;
     list-style-type: none;
+    margin: 0px;
 }
 
 .search {
-    margin-left: 451px;
+    /* margin-left: 451px; */
 
     & input {
         background-color: $dark_grey;

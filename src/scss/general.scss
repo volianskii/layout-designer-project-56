@@ -21,9 +21,16 @@ body {
     font-size: 16px;
 }
 
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+}
+
 p,
 h1,
 h2,
+h3,
 li,
 a {
     @include roboto;
@@ -48,6 +55,12 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    font-size: 24px;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
 .content-width {
     width: 1200px;
 }
@@ -55,9 +68,7 @@ h2 {
 section,
 footer {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column);
     justify-content: center;
     padding: 200px 0;
     background-color: $black;
@@ -70,16 +81,17 @@ footer {
 }
 
 .flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column);
     text-align: center;
 } 
 
+.flex-row {
+    @include flex(row);
+}
+
 .flex-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex(row);
+    justify-content: space-between;
 }
 
 @media (max-width: 415px) {
@@ -106,8 +118,12 @@ footer {
     }
 
     .flex-header {
-        display: flex;
-        flex-direction: column;
+        @include flex(column);
+        align-items: unset;
+    }
+
+    .flex-row {
+        @include flex(column);
         align-items: unset;
     }
 }
