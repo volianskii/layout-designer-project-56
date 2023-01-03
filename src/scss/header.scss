@@ -19,15 +19,21 @@
 
 .music-box {
     /* margin-left: 119px; */
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 16px;
     margin-right: 90px;
 
-    & p {
+    & img {
+        height: 24px;
+    }
+    /* & p {
         position: relative;
         left: 40px;
-    }
+    } */
 }
 
-.music-box p::before {
+/* .music-box p::before {
     position: absolute;
     content: "";
     background-image: url(../images/logo.svg);
@@ -37,11 +43,7 @@
     width: 24px;
     left: -40px;
     top: -5px;
-}
-
-.white {
-    color: $white;
-}
+} */
 
 .menu > ul {
     display: grid;
@@ -49,6 +51,7 @@
     column-gap: 24px;
     list-style-type: none;
     margin: 0px;
+    padding: 0px;
 }
 
 .search {
