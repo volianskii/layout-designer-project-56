@@ -1,0 +1,44 @@
+#page-app {
+    padding: 100px 0px 0px 0px;
+    margin-bottom: 100px;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 48px;
+
+    & img {
+        margin-left: 144px;
+    }
+}
+
+.app-body {
+    text-align: start;
+
+    & p {
+        margin: 16px 0px;
+    }
+}
+
+.oval {
+    width: min-content;
+    height: unset;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 32px;
+    background-color: $brown;
+}
+
+@media (max-width: 415px) {
+    .app {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        
+        & img {
+            grid-row-start: 1;
+            margin-left: unset;
+            justify-self: center;
+        }
+    }
+}
