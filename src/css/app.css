@@ -11,6 +11,7 @@
 body {
   margin: 0px;
   width: 100%;
+  background-color: #08020D;
 }
 
 p,
@@ -74,6 +75,14 @@ h3 {
   color: #E0E0E0;
 }
 
+.bg-purple {
+  background-color: #5328A1;
+}
+
+.bg-brown {
+  background-color: #95390C;
+}
+
 .small-text {
   font-size: 12.8px;
   line-height: 1.5;
@@ -98,7 +107,6 @@ section, footer {
   align-items: center;
   justify-content: center;
   padding: 200px 0;
-  background-color: #08020D;
   width: 100%;
 }
 
@@ -321,17 +329,23 @@ footer a {
     text-indent: 10px;
   }
 }
-#page-description::before {
-  position: absolute;
-  content: "";
+/* #page-description::before {
+    position: absolute;
+    content: "";
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+} */
+.section-1 {
   background-image: url(../images/banner.png);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
 }
-
-#page-description p {
+.section-1 p {
   margin: 31px 0px 17px 0px;
   line-height: 24px;
 }
@@ -594,6 +608,121 @@ footer a {
     grid-row-start: 1;
     margin-left: unset;
     justify-self: center;
+  }
+}
+.artist-description {
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.artist-main {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-align: left;
+}
+.artist-main h1 {
+  margin: 16px 0 50px;
+}
+
+.artist-main-button {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: 20px;
+  column-gap: 16px;
+  width: 200px;
+  height: 62px;
+  border: none;
+  text-transform: uppercase;
+  align-content: center;
+  justify-content: unset;
+}
+.artist-main-button img {
+  height: 100%;
+  filter: invert(1);
+}
+
+.two-buttons {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: auto;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  margin: 48px 0 23px;
+}
+
+@media (max-width: 415px) {
+  .artist-main h1 {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 16px 0 25px;
+  }
+  .two-buttons {
+    grid-template-columns: min-content;
+    grid-template-rows: auto auto;
+  }
+}
+#page-popular-track {
+  padding: 100px 0 0;
+}
+#page-popular-track h2 {
+  align-self: flex-start;
+}
+#page-popular-track h3 {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: bold;
+}
+
+.track-list {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  column-gap: 50px;
+  row-gap: 25px;
+  padding-right: 50px;
+  margin-top: 48px;
+}
+
+.popular-track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+}
+.popular-track img {
+  width: 55px;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.track-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 415px) {
+  #page-popular-track h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+  }
+  .track-list {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    padding: 0;
   }
 }
 

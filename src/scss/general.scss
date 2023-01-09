@@ -12,6 +12,7 @@
 body {
     margin: 0px;
     width: 100%;
+    background-color: $black;
 }
 
 @mixin roboto {
@@ -85,6 +86,14 @@ h3 {
     color: $grey;
 }
 
+.bg-purple {
+    background-color: $purple;
+}
+
+.bg-brown {
+    background-color: $brown;
+}
+
 .small-text {
     font-size: 12.8px;
     line-height: 1.5;
@@ -107,7 +116,6 @@ section, footer {
     @include flex(column);
     justify-content: center;
     padding: 200px 0;
-    background-color: $black;
     width: 100%;
 }
 
