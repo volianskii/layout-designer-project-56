@@ -163,12 +163,13 @@ footer a {
 .footer-body ul {
   list-style: none;
   padding: 0px;
-  margin: 0px 0px 1.5em 0px;
+  margin: 0px 0px 1em 0px;
 }
 
 .social-media {
   display: grid;
   grid-template-columns: repeat(2, min-content);
+  grid-template-rows: 16px;
   column-gap: 24px;
 }
 
@@ -178,6 +179,10 @@ footer a {
   font-weight: bold;
   text-transform: uppercase;
   margin: 0.83em 0px;
+}
+
+.mobile-bottom-margin {
+  margin-bottom: 19px;
 }
 
 .footer-bottom {
@@ -225,12 +230,19 @@ footer a {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
     row-gap: 30px;
+    padding-bottom: 67px;
   }
   .footer-body ul {
     margin: 0px;
   }
   .footer-header {
     margin: 0px 0px 16px 0px;
+  }
+  .mobile-top-margin {
+    margin-top: 0.83em;
+  }
+  .mobile-bottom-margin {
+    margin-bottom: 19px;
   }
   .footer-bottom {
     grid-template-columns: auto;
@@ -723,6 +735,90 @@ footer a {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     padding: 0;
+  }
+}
+#page-discography {
+  padding: 100px 0 0;
+}
+#page-discography h2 {
+  align-self: flex-start;
+}
+
+.album-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 50px;
+  row-gap: 25px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 50px;
+  margin-top: 48px;
+}
+
+.album-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  align-items: flex-start;
+}
+.album-element img {
+  width: 250px;
+}
+.album-element h3 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 18px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 415px) {
+  #page-discography h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+  }
+  .album-list {
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(3, auto);
+    padding: 0;
+  }
+  .album-element img {
+    width: 137px;
+  }
+}
+#page-similar {
+  padding: 100px 0 0;
+  margin-bottom: 100px;
+}
+#page-similar h2 {
+  align-self: flex-start;
+}
+
+.similar-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.similar-item img {
+  width: 250px;
+}
+.similar-item h3 {
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 18px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 415px) {
+  #page-similar h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+  }
+  .similar-item img {
+    width: 137px;
   }
 }
 

@@ -1,0 +1,35 @@
+#page-similar {
+    padding: 100px 0 0;
+    margin-bottom: 100px;
+
+    & h2 {
+        align-self: flex-start;
+    }
+}
+
+.similar-item {
+    @include flex(column);
+
+    & img {
+        width: 250px;
+    }
+
+    & h3 {
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 18px;
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 415px) {
+    #page-similar h2 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 27px;
+    }
+
+    .similar-item img {
+        width: 137px;
+    }
+}
