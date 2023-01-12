@@ -52,7 +52,6 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(3, auto);
-        row-gap: 24px;
         width: 100%;
     
         & input {
