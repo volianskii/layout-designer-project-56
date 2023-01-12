@@ -10,7 +10,7 @@
 }
 
 body {
-    margin: 0px;
+    margin: 0;
     width: 100%;
     background-color: $black;
 }
@@ -35,7 +35,7 @@ h3,
 li,
 a {
     @include roboto;
-    margin: 0px;
+    margin: 0;
 }
 
 p {
@@ -150,7 +150,7 @@ section, footer {
 }
 
 footer {
-    padding: 0px;
+    padding: 0;
 
     & a{
         line-height: 24px;
@@ -158,7 +158,7 @@ footer {
 }
 
 .footer-body {
-    padding: 3rem 0px;
+    padding: 3rem 0;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -167,8 +167,8 @@ footer {
 
     & ul {
         list-style: none;
-        padding: 0px;
-        margin: 0px 0px 1em 0px;
+        padding: 0;
+        margin: 0 0 1em;
     }
 }
 
@@ -184,7 +184,7 @@ footer {
     line-height: 27px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0.83em 0px;
+    margin: 0.83em 0;
 }
 
 .mobile-bottom-margin {
@@ -193,7 +193,7 @@ footer {
 
 .footer-bottom {
     align-self: flex-start;
-    padding: 2rem 0px;
+    padding: 2rem 0;
     
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -220,7 +220,7 @@ footer {
     .content {
         width: 100%;
         position: relative;
-        padding: 0px 20px;
+        padding: 0 20px;
         box-sizing: border-box;
     }
 
@@ -241,12 +241,12 @@ footer {
         padding-bottom: 67px;
 
         & ul {
-            margin: 0px;
+            margin: 0;
         }
     }
 
     .footer-header {
-        margin: 0px 0px 16px 0px;
+        margin: 0 0 16px;
     }
 
     .mobile-top-margin {

@@ -1,5 +1,5 @@
 #page-news {
-    padding: 100px 0px 0px 0px;
+    padding: 100px 0 0;
 }
 
 .news-item {
@@ -8,7 +8,7 @@
     column-gap: 50px;
 
     &:nth-child(2) {
-        margin: 48px 0px 65px 0px;
+        margin: 48px 0 65px;
     }
 }
 
@@ -60,6 +60,7 @@
             line-height: 24px;
             font-weight: normal;
             text-transform: capitalize;
+            margin-bottom: 16px;
         }
 
         & img {
@@ -70,5 +71,9 @@
         & .flex-left {
             grid-row-start: 2;
         }
+    }
+
+    .news-body {
+        margin-bottom: 16px;
     }
 }

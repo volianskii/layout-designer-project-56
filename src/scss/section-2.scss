@@ -1,9 +1,9 @@
 #page-pricing {
-    padding: 100px 0px 0px 0px;
+    padding: 100px 0 0;
 }
 
 .cards {
-    margin: 45px 0px 43px 0px;
+    margin: 45px 0 43px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
@@ -14,21 +14,34 @@
     border-radius: 1rem;
     padding: 24px 1.5rem 64px 1.5rem;
     @include flex(column);
+
+    & h3 {
+        line-height: 36px;
+    }
+}
+
+.price-container {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: auto;
+    column-gap: 16px;
+    margin: 200px 0 40px;
+}
+
+.pricing-coin {
+    font-size: 32px;
+    text-transform: uppercase;
+    line-height: 48px;
 }
 
 .pricing-value {
     font-size: 64px;
     line-height: 1em;
-    margin: 200px 0px 40px 0px;
-
-    & sup {
-        font-size: 32px;
-        text-transform: uppercase;
-    }
 }
 
 .pricing-footer {
     font-size: 12.8px;
+    line-height: 1.5em;
     margin-top: 64px;
 }
 
@@ -58,7 +71,7 @@
 
 @media (max-width: 415px) {
     .cards {
-        margin: 45px 0px 43px 0px;
+        margin: 45px 0 43px;
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: repeat(3, auto);

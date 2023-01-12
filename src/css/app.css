@@ -9,7 +9,7 @@
   src: url(/fonts/Roboto-Bold.ttf);
 }
 body {
-  margin: 0px;
+  margin: 0;
   width: 100%;
   background-color: #08020D;
 }
@@ -24,7 +24,7 @@ a {
   font-weight: 400;
   color: #CACACA;
   font-size: 16px;
-  margin: 0px;
+  margin: 0;
 }
 
 p {
@@ -146,14 +146,14 @@ section, footer {
 }
 
 footer {
-  padding: 0px;
+  padding: 0;
 }
 footer a {
   line-height: 24px;
 }
 
 .footer-body {
-  padding: 3rem 0px;
+  padding: 3rem 0;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -162,8 +162,8 @@ footer a {
 }
 .footer-body ul {
   list-style: none;
-  padding: 0px;
-  margin: 0px 0px 1em 0px;
+  padding: 0;
+  margin: 0 0 1em;
 }
 
 .social-media {
@@ -178,7 +178,7 @@ footer a {
   line-height: 27px;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0.83em 0px;
+  margin: 0.83em 0;
 }
 
 .mobile-bottom-margin {
@@ -187,7 +187,7 @@ footer a {
 
 .footer-bottom {
   align-self: flex-start;
-  padding: 2rem 0px;
+  padding: 2rem 0;
   display: grid;
   grid-template-columns: repeat(5, auto);
   column-gap: 16px;
@@ -211,7 +211,7 @@ footer a {
   .content {
     width: 100%;
     position: relative;
-    padding: 0px 20px;
+    padding: 0 20px;
     box-sizing: border-box;
   }
   .flex-header {
@@ -233,10 +233,10 @@ footer a {
     padding-bottom: 67px;
   }
   .footer-body ul {
-    margin: 0px;
+    margin: 0;
   }
   .footer-header {
-    margin: 0px 0px 16px 0px;
+    margin: 0 0 16px;
   }
   .mobile-top-margin {
     margin-top: 0.83em;
@@ -267,47 +267,28 @@ footer a {
 }
 
 .music-box {
-  /* margin-left: 119px; */
   display: grid;
   grid-template-columns: min-content max-content;
   column-gap: 16px;
   margin-right: 90px;
-  /* & p {
-      position: relative;
-      left: 40px;
-  } */
 }
 .music-box img {
   height: 24px;
 }
 
-/* .music-box p::before {
-    position: absolute;
-    content: "";
-    background-image: url(../images/logo.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 24px;
-    width: 24px;
-    left: -40px;
-    top: -5px;
-} */
 .menu > ul {
   display: grid;
   grid-template-columns: repeat(4, auto);
   column-gap: 24px;
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-.search {
-  /* margin-left: 451px; */
-}
 .search input {
   background-color: #3C3B3D;
   border-radius: 50px;
-  padding: 0px;
+  padding: 0;
   width: 248px;
   height: 25px;
   border: none;
@@ -325,31 +306,22 @@ footer a {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
     row-gap: 3px;
-    padding-left: 0px;
-    margin: 23px 0px 18px 0px;
+    padding-left: 0;
+    margin: 23px 0 18px;
   }
   .search {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .search input {
     background-color: #3C3B3D;
     border-radius: 50px;
-    padding: 0px;
+    padding: 0;
     width: 100%;
     height: 25px;
     border: none;
     text-indent: 10px;
   }
 }
-/* #page-description::before {
-    position: absolute;
-    content: "";
-    background-image: url(../images/banner.png);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-} */
 .section-1 {
   background-image: url(../images/banner.png);
   background-position: center;
@@ -358,7 +330,7 @@ footer a {
   height: 100%;
 }
 .section-1 p {
-  margin: 31px 0px 17px 0px;
+  margin: 31px 0 17px;
   line-height: 24px;
 }
 
@@ -367,16 +339,16 @@ footer a {
   grid-template-columns: min-content;
   grid-template-rows: min-content;
   column-gap: 24px;
-  row-gap: 24px;
 }
 .form input {
   min-height: 50px;
-  min-width: 270px;
+  min-width: 273px;
   text-indent: 20px;
   border: 2px solid #cacaca;
   border-radius: 3px;
   background: none;
   box-sizing: border-box;
+  margin-bottom: 1.5rem;
 }
 .form button {
   padding: 20px 30px;
@@ -385,6 +357,7 @@ footer a {
   background-color: #34C176;
   color: #FFF;
   grid-column: span 2;
+  min-height: 57px;
 }
 .form input::placeholder {
   font-family: "Roboto";
@@ -402,11 +375,8 @@ footer a {
     width: 100%;
   }
   .form input {
-    /* min-width: 270px; */
     min-height: 50px;
-    /* width: 100%; */
     text-indent: 20px;
-    /*  margin-bottom: 1.5rem; */
     border: 2px solid #cacaca;
     border-radius: 3px;
     background: none;
@@ -418,7 +388,6 @@ footer a {
     border: none;
     background-color: #34C176;
     color: #FFF;
-    /* width: 100%; */
   }
   .form input:nth-child(1) {
     grid-column-start: 1;
@@ -437,11 +406,11 @@ footer a {
   }
 }
 #page-pricing {
-  padding: 100px 0px 0px 0px;
+  padding: 100px 0 0;
 }
 
 .cards {
-  margin: 45px 0px 43px 0px;
+  margin: 45px 0 43px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
@@ -455,19 +424,32 @@ footer a {
   flex-direction: column;
   align-items: center;
 }
+.pricing-item h3 {
+  line-height: 36px;
+}
+
+.price-container {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: auto;
+  column-gap: 16px;
+  margin: 200px 0 40px;
+}
+
+.pricing-coin {
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 48px;
+}
 
 .pricing-value {
   font-size: 64px;
   line-height: 1em;
-  margin: 200px 0px 40px 0px;
-}
-.pricing-value sup {
-  font-size: 32px;
-  text-transform: uppercase;
 }
 
 .pricing-footer {
   font-size: 12.8px;
+  line-height: 1.5em;
   margin-top: 64px;
 }
 
@@ -497,7 +479,7 @@ footer a {
 
 @media (max-width: 415px) {
   .cards {
-    margin: 45px 0px 43px 0px;
+    margin: 45px 0 43px;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
@@ -509,7 +491,7 @@ footer a {
   }
 }
 #page-news {
-  padding: 100px 0px 0px 0px;
+  padding: 100px 0 0;
 }
 
 .news-item {
@@ -520,7 +502,7 @@ footer a {
   column-gap: 50px;
 }
 .news-item:nth-child(2) {
-  margin: 48px 0px 65px 0px;
+  margin: 48px 0 65px;
 }
 
 .news-body {
@@ -572,6 +554,7 @@ footer a {
     line-height: 24px;
     font-weight: normal;
     text-transform: capitalize;
+    margin-bottom: 16px;
   }
   .news-item img {
     grid-row-start: 1;
@@ -580,9 +563,12 @@ footer a {
   .news-item .flex-left {
     grid-row-start: 2;
   }
+  .news-body {
+    margin-bottom: 16px;
+  }
 }
 #page-app {
-  padding: 100px 0px 0px 0px;
+  padding: 100px 0 0;
   margin-bottom: 100px;
 }
 
@@ -599,7 +585,7 @@ footer a {
   text-align: start;
 }
 .app-body p {
-  margin: 16px 0px;
+  margin: 16px 0;
 }
 
 .oval {
