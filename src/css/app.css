@@ -419,6 +419,10 @@ footer a {
 }
 #page-pricing {
   padding-top: 100px;
+  /* эксперимент  */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .cards {
@@ -508,6 +512,10 @@ footer a {
 }
 #page-news {
   padding-top: 100px;
+  /* эксперимент  */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .news-item {
@@ -586,6 +594,10 @@ footer a {
 #page-app {
   padding-top: 100px;
   margin-bottom: 100px;
+  /* эксперимент  */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .app {
