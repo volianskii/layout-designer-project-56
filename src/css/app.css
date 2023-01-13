@@ -106,7 +106,7 @@ section, footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 200px 0;
+  /* padding: 200px 0; */
   width: 100%;
 }
 
@@ -211,7 +211,8 @@ footer a {
   .content {
     width: 100%;
     position: relative;
-    padding: 0 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     box-sizing: border-box;
   }
   .flex-header {
@@ -323,6 +324,11 @@ footer a {
     text-indent: 10px;
   }
 }
+#page-description {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
 .section-1 {
   background-image: url(../images/banner.png);
   background-position: center;
@@ -407,7 +413,7 @@ footer a {
   }
 }
 #page-pricing {
-  padding: 100px 0 0;
+  padding-top: 100px;
 }
 
 .cards {
@@ -496,7 +502,7 @@ footer a {
   }
 }
 #page-news {
-  padding: 100px 0 0;
+  padding-top: 100px;
 }
 
 .news-item {
@@ -573,7 +579,7 @@ footer a {
   }
 }
 #page-app {
-  padding: 100px 0 0;
+  padding-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -668,7 +674,7 @@ footer a {
   }
 }
 #page-popular-track {
-  padding: 100px 0 0;
+  padding-top: 100px;
 }
 #page-popular-track h2 {
   align-self: flex-start;
@@ -729,7 +735,7 @@ footer a {
   }
 }
 #page-discography {
-  padding: 100px 0 0;
+  padding-top: 100px;
 }
 #page-discography h2 {
   align-self: flex-start;
@@ -780,7 +786,7 @@ footer a {
   }
 }
 #page-similar {
-  padding: 100px 0 0;
+  padding-top: 100px;
   margin-bottom: 100px;
 }
 #page-similar h2 {
