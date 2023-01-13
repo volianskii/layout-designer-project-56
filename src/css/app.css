@@ -623,7 +623,7 @@ footer a {
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
-  padding: 200px 0;
+  /* padding: 200px 0; */
 }
 
 .artist-main {
