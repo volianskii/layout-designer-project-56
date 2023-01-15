@@ -293,7 +293,7 @@ footer a {
   border-radius: 50px;
   padding: 0;
   width: 248px;
-  height: 30px;
+  height: 35px;
   border: none;
   text-indent: 10px;
 }
@@ -402,6 +402,7 @@ footer a {
     border: none;
     background-color: #34C176;
     color: #FFF;
+    height: 61px;
   }
   .form input:nth-child(1) {
     grid-column-start: 1;
