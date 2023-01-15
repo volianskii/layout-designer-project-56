@@ -310,7 +310,10 @@ footer a {
     grid-template-rows: repeat(4, auto);
     row-gap: 3px;
     padding-left: 0;
-    margin: 23px 0 18px;
+    margin: 17px 0 18px;
+  }
+  .menu > ul li {
+    line-height: 12.89px;
   }
   .search {
     margin-left: 0;
@@ -589,6 +592,9 @@ footer a {
   }
   .news-body {
     margin-bottom: 16px;
+  }
+  .margin-mobile-24 {
+    margin-bottom: 24px;
   }
 }
 #page-app {
