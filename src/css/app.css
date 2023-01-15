@@ -704,6 +704,9 @@ footer a {
 }
 #page-popular-track {
   padding-top: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: center;
 }
 #page-popular-track h2 {
   align-self: flex-start;
@@ -765,6 +768,9 @@ footer a {
 }
 #page-discography {
   padding-top: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: center;
 }
 #page-discography h2 {
   align-self: flex-start;
@@ -817,6 +823,9 @@ footer a {
 #page-similar {
   padding-top: 100px;
   margin-bottom: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: center;
 }
 #page-similar h2 {
   align-self: flex-start;
