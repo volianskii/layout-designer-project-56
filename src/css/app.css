@@ -517,10 +517,12 @@ footer a {
 }
 #page-news {
   padding-top: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
   /* эксперимент  */
-  display: flex;
+  /* display: flex; */
   justify-content: center;
-  width: 100%;
+  /*  width: 100%; */
 }
 
 .news-item {
@@ -602,10 +604,12 @@ footer a {
 #page-app {
   padding-top: 100px;
   margin-bottom: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
   /* эксперимент  */
-  display: flex;
+  /* display: flex; */
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .app {
