@@ -1,63 +1,61 @@
 .artist-description {
-    background-image: url('../images/Morten\ Harket.png');
-    background-position: center;
-    background-size: cover;
-    /* padding: 200px 0; */
+  background-image: url("../images/Morten\ Harket.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .artist-main {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  text-align: left;
 
-    & h1 {
-        margin: 16px 0 50px;
-    }
+  & h1 {
+    margin: 16px 0 50px;
+  }
 }
 
 .artist-main-button {
-    display: grid;
-    grid-template-columns: min-content auto;
-    grid-template-rows: 20px;
-    column-gap: 16px;
-    width: 200px;
-    height: 62px;
-    border: none;
-    text-transform: uppercase;
-    align-content: center;
-    justify-content: unset;
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-template-rows: 20px;
+  column-gap: 16px;
+  width: 200px;
+  height: 62px;
+  border: none;
+  text-transform: uppercase;
+  align-content: center;
+  justify-content: unset;
 
-    & img {
-        height: 100%;
-        filter: invert(1);
-    }
+  & img {
+    height: 100%;
+    filter: invert(1);
+  }
 }
 
 .two-buttons {
-    display: grid;
-    grid-template-columns: min-content min-content;
-    grid-template-rows: auto;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem;
-    margin: 48px 0 23px;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: auto;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  margin: 48px 0 23px;
 }
 
-
 @media (max-width: 415px) {
-    .artist-main h1 {
-        font-size: 30px;
-        line-height: 45px;
-        margin: 25px 0 0;
-    }
+  .artist-main h1 {
+    font-size: 30px;
+    line-height: 45px;
+    margin: 25px 0 0;
+  }
 
-    .artist-main > p {
-        margin-bottom: 0;
-        margin-top: 16px;
-    }
+  .artist-main > p {
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
 
-    .two-buttons {
-        grid-template-columns: min-content;
-        grid-template-rows: auto auto;
-    }
+  .two-buttons {
+    grid-template-columns: min-content;
+    grid-template-rows: auto auto;
+  }
 }
