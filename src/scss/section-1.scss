@@ -7,7 +7,7 @@
 }
 
 .section-1 {
-  background-image: url(../images/banner.png);
+  background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -47,7 +47,7 @@
   }
 
   & input::placeholder {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: $white;
     font-size: 14px;
   }
@@ -77,22 +77,22 @@
       color: $white;
       height: 61px;
     }
-  }  
+  }
 
   .form input:nth-child(1) {
     grid-column-start: 1;
     grid-row-start: 1;
-  } 
+  }
 
   .form input:nth-child(2) {
     grid-column-start: 1;
     grid-row-start: 2;
-  } 
+  }
 
   .form button {
     grid-column-start: 1;
     grid-row-start: 3;
-  } 
+  }
 
   .section-1 p {
     margin-top: 16px;

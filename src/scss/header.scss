@@ -51,7 +51,7 @@
 }
 
 .search input::placeholder {
-  font-family: "Arial";
+  font-family: Arial, sans-serif;
   color: #757575;
 }
 
@@ -71,7 +71,6 @@
 
   .search {
     margin-left: 0;
-    
 
     & input {
       background-color: $dark-grey;

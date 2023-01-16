@@ -1,12 +1,13 @@
 @font-face {
   font-weight: 400;
   font-family: Roboto;
-  src: url(/fonts/Roboto-Regular.ttf);
+  src: url("/fonts/Roboto-Regular.ttf");
 }
+
 @font-face {
   font-weight: 700;
   font-family: Roboto;
-  src: url(/fonts/Roboto-Bold.ttf);
+  src: url("/fonts/Roboto-Bold.ttf");
 }
 
 body {
@@ -111,8 +112,10 @@ h3 {
   border-radius: 5px;
 }
 
-section, footer {
+section,
+footer {
   position: relative;
+
   @include flex(column);
   justify-content: center;
   width: 100%;
@@ -126,7 +129,7 @@ section, footer {
 .flex {
   @include flex(column);
   text-align: center;
-} 
+}
 
 .flex-row {
   @include flex(row);
@@ -193,7 +196,6 @@ footer {
 .footer-bottom {
   align-self: flex-start;
   padding: 2rem 0;
-  
   display: grid;
   grid-template-columns: repeat(5, auto);
   column-gap: 16px;
@@ -208,13 +210,13 @@ footer {
     text-transform: uppercase;
     margin-top: 47px;
   }
-  
+
   h2 {
     font-size: 18px;
     line-height: 27px;
     font-weight: bold;
     text-transform: uppercase;
-  } 
+  }
 
   .content {
     width: 100%;
@@ -253,7 +255,7 @@ footer {
     margin-top: 0.83em;
   }
 
-  .mobile-bottom-margin{
+  .mobile-bottom-margin {
     margin-bottom: 19px;
   }
 
