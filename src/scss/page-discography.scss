@@ -1,57 +1,57 @@
 #page-discography {
-    padding-top: 100px;
-    padding-right: 20px;
-    padding-left: 20px;
-    justify-content: center;
+  padding-top: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: center;
 
-    & h2 {
-        align-self: flex-start;
-    }
+  & h2 {
+    align-self: flex-start;
+  }
 }
 
 .album-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
-    column-gap: 50px;
-    row-gap: 25px;
-    box-sizing: border-box;
-    width: 100%;
-    padding-right: 50px;
-    margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 50px;
+  row-gap: 25px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 50px;
+  margin-top: 48px;
 }
 
 .album-element {
-    @include flex(column);
-    text-align: start;
-    align-items: flex-start;
+  @include flex(column);
+  text-align: start;
+  align-items: flex-start;
 
-    & img {
-        width: 250px;
-    }
+  & img {
+    width: 250px;
+  }
 
-    & h3 {
-        font-size: 18px;
-        line-height: 27px;
-        margin-top: 18px;
-        text-transform: capitalize;
-    }
+  & h3 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 18px;
+    text-transform: capitalize;
+  }
 }
 
 @media (max-width: 415px) {
-    #page-discography h2 {
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 27px;
-    }
+  #page-discography h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+  }
 
-    .album-list {
-        grid-template-columns: repeat(2, min-content);
-        grid-template-rows: repeat(3, auto);
-        padding: 0;
-    }
+  .album-list {
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(3, auto);
+    padding: 0;
+  }
 
-    .album-element img {
-        width: 137px;
-    }
+  .album-element img {
+    width: 137px;
+  }
 }

@@ -1,89 +1,86 @@
 #page-news {
-    padding-top: 100px;
-    padding-right: 20px;
-    padding-left: 20px;
-    /* эксперимент  */
-    /* display: flex; */
-    justify-content: center;
-   /*  width: 100%; */
+  padding-top: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: center;
 }
 
 .news-item {
-    @include flex(row);
-    align-items: unset;
-    column-gap: 50px;
+  @include flex(row);
+  align-items: unset;
+  column-gap: 50px;
 
-    &:nth-child(2) {
-        margin: 48px 0 65px;
-    }
+  &:nth-child(2) {
+    margin: 48px 0 65px;
+  }
 }
 
 .news-body {
-    text-align: start;
-    align-items: flex-start;
-    margin-bottom: 24px;
+  text-align: start;
+  align-items: flex-start;
+  margin-bottom: 24px;
 
-    & h3 {
-        font-size: 30px;
-        line-height: 45px;
-        font-weight: normal;
-        margin-bottom: 30px;
-    }
+  & h3 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: normal;
+    margin-bottom: 30px;
+  }
 }
 
 .news-footer {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 .news-author {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 16px;
-    margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 16px;
+  margin-bottom: 48px;
 }
 
 .album {
-    border: 1px solid $mid_grey;
-    padding: 16px 30px;
-    width: unset;
-    height: unset;
+  border: 1px solid $mid-grey;
+  padding: 16px 30px;
+  width: unset;
+  height: unset;
 }
 
 .flex-left {
-    @include flex(column);
-    align-items: flex-start;
+  @include flex(column);
+  align-items: flex-start;
 }
 
 @media (max-width: 415px) {
-    .news-item {
-        display: grid;
-        grid-template-rows: auto auto;
-        row-gap: 50px;
-        width: 100%;
+  .news-item {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 50px;
+    width: 100%;
 
-        & h3 {
-            font-size: 16px;
-            line-height: 24px;
-            font-weight: normal;
-            text-transform: capitalize;
-            margin-bottom: 16px;
-        }
-
-        & img {
-            grid-row-start: 1;
-            width: 100%;
-        }
-
-        & .flex-left {
-            grid-row-start: 2;
-        }
+    & h3 {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: normal;
+      text-transform: capitalize;
+      margin-bottom: 16px;
     }
 
-    .news-body {
-        margin-bottom: 16px;
+    & img {
+      grid-row-start: 1;
+      width: 100%;
     }
 
-    .margin-mobile-24 {
-        margin-bottom: 24px;
+    & .flex-left {
+      grid-row-start: 2;
     }
+  }
+
+  .news-body {
+    margin-bottom: 16px;
+  }
+
+  .margin-mobile-24 {
+    margin-bottom: 24px;
+  }
 }

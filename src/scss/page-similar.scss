@@ -1,42 +1,42 @@
 #page-similar {
-    padding-top: 100px;
-    margin-bottom: 100px;
-    padding-right: 20px;
-    padding-left: 20px;
-    justify-content: center;
+  padding-top: 100px;
+  margin-bottom: 100px;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: center;
 
-    & h2 {
-        align-self: flex-start;
-    }
+  & h2 {
+    align-self: flex-start;
+  }
 }
 
 .similar-item {
-    @include flex(column);
+  @include flex(column);
 
-    & img {
-        width: 250px;
-    }
+  & img {
+    width: 250px;
+  }
 
-    & h3 {
-        font-size: 18px;
-        line-height: 27px;
-        margin-top: 18px;
-        text-transform: capitalize;
-    }
+  & h3 {
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 18px;
+    text-transform: capitalize;
+  }
 }
 
 .similar-info h3 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 @media (max-width: 415px) {
-    #page-similar h2 {
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 27px;
-    }
+  #page-similar h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 27px;
+  }
 
-    .similar-item img {
-        width: 137px;
-    }
+  .similar-item img {
+    width: 137px;
+  }
 }

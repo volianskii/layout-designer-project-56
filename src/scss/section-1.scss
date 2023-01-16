@@ -1,108 +1,101 @@
 #page-description {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    /* эксперимент  */
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .section-1 {
-    background-image: url(../images/banner.png);
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 
-    & p {
-        margin: 31px 0 17px;
-        line-height: 24px;
-    }
+  & p {
+    margin: 31px 0 17px;
+    line-height: 24px;
+  }
 }
 
 .form {
-    display: grid;
-    grid-template-columns: min-content;
-    grid-template-rows: min-content;
-    column-gap: 24px;
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
+  column-gap: 24px;
 
-    & input {
-        min-height: 50px;
-        min-width: 273px;
-        text-indent: 20px;
-        border: 2px solid #cacaca;
-        border-radius: 3px;
-        background: none;
-        box-sizing: border-box;
-        margin-bottom: 1.5rem;
-    }
+  & input {
+    min-height: 50px;
+    min-width: 273px;
+    text-indent: 20px;
+    border: 2px solid #cacaca;
+    border-radius: 3px;
+    background: none;
+    box-sizing: border-box;
+    margin-bottom: 1.5rem;
+  }
 
-    & button {
-        padding: 20px 30px;
-        border-radius: 5px;
-        border: none;
-        background-color: $green;
-        color: $white;
-        grid-column: span 2;
-        min-height: 57px;
-    }
+  & button {
+    padding: 20px 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: $green;
+    color: $white;
+    grid-column: span 2;
+    min-height: 57px;
+  }
 
-    & input::placeholder {
-        font-family: "Roboto";
-        color: $white;
-        /* font-weight: bold; */
-        font-size: 14px;
-    }
+  & input::placeholder {
+    font-family: Roboto;
+    color: $white;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 415px) {
-    
-    .form {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: repeat(3, auto);
-        width: 100%;
-    
-        & input {
-            min-height: 50px;
-            text-indent: 20px;
-            border: 2px solid #cacaca;
-            border-radius: 3px;
-            background: none;
-            box-sizing: border-box;
-        }
-    
-        & button {
-            padding: 20px 30px;
-            border-radius: 5px;
-            border: none;
-            background-color: $green;
-            color: $white;
-            height: 61px;
-        }
-    }  
+  .form {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    width: 100%;
 
-    .form input:nth-child(1) {
-        grid-column-start: 1;
-        grid-row-start: 1;
-    } 
-
-    .form input:nth-child(2) {
-        grid-column-start: 1;
-        grid-row-start: 2;
-    } 
-
-    .form button {
-        grid-column-start: 1;
-        grid-row-start: 3;
-    } 
-
-    .section-1 p {
-        margin-top: 16px;
-        margin-bottom: 16px;
+    & input {
+      min-height: 50px;
+      text-indent: 20px;
+      border: 2px solid #cacaca;
+      border-radius: 3px;
+      background: none;
+      box-sizing: border-box;
     }
-    /* #page-description p {
-        margin-top: 16px;
-        margin-bottom: 16px;
-    } */
+
+    & button {
+      padding: 20px 30px;
+      border-radius: 5px;
+      border: none;
+      background-color: $green;
+      color: $white;
+      height: 61px;
+    }
+  }  
+
+  .form input:nth-child(1) {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  } 
+
+  .form input:nth-child(2) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  } 
+
+  .form button {
+    grid-column-start: 1;
+    grid-row-start: 3;
+  } 
+
+  .section-1 p {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
 }
