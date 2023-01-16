@@ -76,6 +76,8 @@
       background-color: $green;
       color: $white;
       height: 61px;
+      grid-column-start: 1;
+      grid-row-start: 3;
     }
   }
 
@@ -87,11 +89,6 @@
   .form input:nth-child(2) {
     grid-column-start: 1;
     grid-row-start: 2;
-  }
-
-  .form button {
-    grid-column-start: 1;
-    grid-row-start: 3;
   }
 
   .section-1 p {
