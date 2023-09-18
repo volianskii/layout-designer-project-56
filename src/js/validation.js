@@ -19,10 +19,3 @@ userNameInput.addEventListener('input', () => {
   userNameInput.reportValidity();
 });
 
-/* userEmailInput.addEventListener('input', () => {
-  if (!(/(\w+)@(\w+)/gi.test(userEmailInput.value))) {
-    userEmailInput.setCustomValidity('Email should match the following format: example@gmail.com');
-  }else {
-    userEmailInput.setCustomValidity('');
-  }
-}); */
