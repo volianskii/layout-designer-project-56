@@ -1,6 +1,6 @@
 "Artists" project WIP
 
-The project was created for practicing basic layout skills, as well as the principles of adaptive layout. It consists of 2 pages. User can use buttons "Главная" and "Исполнители" to navigate between them.
+The project was created for practicing basic layout skills, as well as the principles of adaptive layout. It consists of 2 pages. User can use buttons "Главная" and "Исполнители" to navigate between them. Layout adapts to the screen width of 1440px and 415px.
 The project is in the process of being finalized.
 
 Technologies used:
@@ -11,14 +11,14 @@ Technologies used:
 -Adaptive layout;
 -Grid;
 -media queries;
--WebPack;
--BrowserSync.
 
-Run the project: npm start
+Run the project:
+-surge login;
+-make deploy.
 
 Проект "Артисты" WIP
 
-Проект создан с целью отработки базовых навыков верстки, а также принципов адаптивной верстки. Он состоит из 2х страниц, перемещение между которыми осуществляется с помощью кнопок в шапке сайта - "Главная" и "Исполнители".
+Проект создан с целью отработки базовых навыков верстки, а также принципов адаптивной верстки. Он состоит из 2х страниц, перемещение между которыми осуществляется с помощью кнопок в шапке сайта - "Главная" и "Исполнители". Верстка адаптируется под ширину экрана в 1440 и 415 пикселей.
 Проект находится в процессе доработки.
 
 Используемые технологии:
@@ -29,7 +29,7 @@ Run the project: npm start
 -Адаптивная верстка;
 -Grid;
 -media запросы;
--WebPack;
--BrowserSync.
 
-Запуск проекта: npm start
+Запуск проекта:
+-surge login;
+-make deploy.
