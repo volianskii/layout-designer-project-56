@@ -1,18 +1,17 @@
-@charset "UTF-8";
 @font-face {
   font-weight: 400;
-  font-family: "Roboto";
-  src: url(/fonts/Roboto-Regular.ttf);
+  font-family: Roboto;
+  src: url("/fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-weight: 700;
-  font-family: "Roboto";
-  src: url(/fonts/Roboto-Bold.ttf);
+  font-family: Roboto;
+  src: url("/fonts/Roboto-Bold.ttf");
 }
 body {
   margin: 0;
   width: 100%;
-  background-color: #08020D;
+  background-color: #08020d;
 }
 
 p,
@@ -21,9 +20,9 @@ h2,
 h3,
 li,
 a {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   font-weight: 400;
-  color: #CACACA;
+  color: #cacaca;
   font-size: 16px;
   margin: 0;
 }
@@ -61,27 +60,27 @@ h3 {
 }
 
 .white {
-  color: #FFF;
+  color: #fff;
 }
 
 .orange {
-  color: #F89202;
+  color: #f89202;
 }
 
 .brown {
-  color: #95390C;
+  color: #95390c;
 }
 
 .grey {
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .bg-purple {
-  background-color: #5328A1;
+  background-color: #5328a1;
 }
 
 .bg-brown {
-  background-color: #95390C;
+  background-color: #95390c;
 }
 
 .small-text {
@@ -97,17 +96,17 @@ h3 {
   width: 100%;
   height: 66px;
   padding: 20px 30px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   border-radius: 5px;
 }
 
-section, footer {
+section,
+footer {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 200px 0; */
   width: 100%;
 }
 
@@ -143,7 +142,7 @@ section, footer {
   height: 2px;
   width: 100vw;
   border: none;
-  background-color: #CACACA;
+  background-color: #cacaca;
 }
 
 footer {
@@ -195,7 +194,7 @@ footer a {
   margin-bottom: 1em;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 765px) {
   h1 {
     font-size: 30px;
     line-height: 45px;
@@ -289,7 +288,7 @@ footer a {
 }
 
 .search input {
-  background-color: #3C3B3D;
+  background-color: #3c3b3d;
   border-radius: 50px;
   padding: 0;
   width: 248px;
@@ -299,11 +298,11 @@ footer a {
 }
 
 .search input::placeholder {
-  font-family: "Arial";
+  font-family: Arial, sans-serif;
   color: #757575;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 765px) {
   .menu > ul {
     display: grid;
     grid-template-columns: auto;
@@ -319,10 +318,11 @@ footer a {
     margin-left: 0;
   }
   .search input {
-    background-color: #3C3B3D;
+    background-color: #3c3b3d;
     border-radius: 50px;
     padding: 0;
     width: 100%;
+    max-width: 300px;
     height: 25px;
     border: none;
     text-indent: 10px;
@@ -331,14 +331,13 @@ footer a {
 #page-description {
   padding-top: 200px;
   padding-bottom: 200px;
-  /* эксперимент  */
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
 .section-1 {
-  background-image: url(../images/banner.png);
+  background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -354,6 +353,11 @@ footer a {
   grid-template-columns: min-content;
   grid-template-rows: min-content;
   column-gap: 24px;
+  /*  & input::placeholder {
+     font-family: Roboto, sans-serif;
+     color: $white;
+     font-size: 14px;
+   } */
 }
 .form input {
   min-height: 50px;
@@ -364,29 +368,32 @@ footer a {
   background: none;
   box-sizing: border-box;
   margin-bottom: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+.form ::placeholder {
+  font-family: Roboto, sans-serif;
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: normal;
 }
 .form button {
   padding: 20px 30px;
   border-radius: 5px;
   border: none;
-  background-color: #34C176;
-  color: #FFF;
+  background-color: #34c176;
+  color: #fff;
   grid-column: span 2;
   min-height: 57px;
 }
-.form input::placeholder {
-  font-family: "Roboto";
-  color: #FFF;
-  /* font-weight: bold; */
-  font-size: 14px;
-}
 
-@media (max-width: 415px) {
+@media (max-width: 765px) {
   .form {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     width: 100%;
+    max-width: 500px;
   }
   .form input {
     min-height: 50px;
@@ -400,9 +407,11 @@ footer a {
     padding: 20px 30px;
     border-radius: 5px;
     border: none;
-    background-color: #34C176;
-    color: #FFF;
+    background-color: #34c176;
+    color: #fff;
     height: 61px;
+    grid-column-start: 1;
+    grid-row-start: 3;
   }
   .form input:nth-child(1) {
     grid-column-start: 1;
@@ -412,27 +421,16 @@ footer a {
     grid-column-start: 1;
     grid-row-start: 2;
   }
-  .form button {
-    grid-column-start: 1;
-    grid-row-start: 3;
-  }
   .section-1 p {
     margin-top: 16px;
     margin-bottom: 16px;
   }
-  /* #page-description p {
-      margin-top: 16px;
-      margin-bottom: 16px;
-  } */
 }
 #page-pricing {
   padding-top: 102px;
   padding-right: 20px;
   padding-left: 20px;
-  /* эксперимент  */
-  /* display: flex; */
   justify-content: center;
-  /* width: 100%; */
 }
 
 .cards {
@@ -445,7 +443,7 @@ footer a {
 .pricing-item {
   box-sizing: border-box;
   border-radius: 1rem;
-  padding: 24px 1.5rem 64px 1.5rem;
+  padding: 24px 1.5rem 64px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -480,25 +478,22 @@ footer a {
 }
 
 .bg-1 {
-  background-image: url(../images/subscribe_1.png);
+  background-image: url("../images/subscribe_1.png");
   background-size: cover;
-  /* background-position: center; */
   height: 100%;
   width: 100%;
 }
 
 .bg-2 {
-  background-image: url(../images/subscribe_2.png);
+  background-image: url("../images/subscribe_2.png");
   background-size: cover;
-  /* background-position: center; */
   height: 100%;
   width: 100%;
 }
 
 .bg-3 {
-  background-image: url(../images/subscribe_3.png);
+  background-image: url("../images/subscribe_3.png");
   background-size: cover;
-  /* background-position: center; */
   height: 100%;
   width: 100%;
 }
@@ -524,10 +519,7 @@ footer a {
   padding-top: 100px;
   padding-right: 20px;
   padding-left: 20px;
-  /* эксперимент  */
-  /* display: flex; */
   justify-content: center;
-  /*  width: 100%; */
 }
 
 .news-item {
@@ -565,7 +557,7 @@ footer a {
 }
 
 .album {
-  border: 1px solid #CACACA;
+  border: 1px solid #cacaca;
   padding: 16px 30px;
   width: unset;
   height: unset;
@@ -611,10 +603,7 @@ footer a {
   margin-bottom: 100px;
   padding-right: 20px;
   padding-left: 20px;
-  /* эксперимент  */
-  /* display: flex; */
   justify-content: center;
-  /* width: 100%; */
 }
 
 .app {
@@ -639,7 +628,7 @@ footer a {
   padding: 16px 40px;
   border: none;
   border-radius: 32px;
-  background-color: #95390C;
+  background-color: #95390c;
 }
 
 @media (max-width: 415px) {
@@ -657,7 +646,6 @@ footer a {
   background-image: url("../images/Morten Harket.png");
   background-position: center;
   background-size: cover;
-  /* padding: 200px 0; */
 }
 
 .artist-main {

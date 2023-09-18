@@ -34,7 +34,15 @@
     background: none;
     box-sizing: border-box;
     margin-bottom: 1.5rem;
+    color: white;
+    font-weight: bold;
   }
+    & ::placeholder {
+      font-family: Roboto, sans-serif;
+      color: #cacaca;
+      font-size: 14px;
+      font-weight: normal;
+    }
 
   & button {
     padding: 20px 30px;
@@ -46,19 +54,20 @@
     min-height: 57px;
   }
 
-  & input::placeholder {
+ /*  & input::placeholder {
     font-family: Roboto, sans-serif;
     color: $white;
     font-size: 14px;
-  }
+  } */
 }
 
-@media (max-width: 415px) {
+@media (max-width: 765px) {
   .form {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     width: 100%;
+    max-width: 500px;
 
     & input {
       min-height: 50px;
