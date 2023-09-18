@@ -1,4 +1,8 @@
-### Hexlet tests and linter status:
+Проект "Артисты"
 
-[![Actions Status](https://github.com/volianskii/layout-designer-project-56/workflows/hexlet-check/badge.svg)](https://github.com/volianskii/layout-designer-project-56/actions)
-kindly-milk.surge.sh
+Используемые технологии:
+-HTML5;
+-CSS;
+-Flexbox;
+
+- -WebPack;
